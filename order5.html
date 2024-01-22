@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="container-navigation">
+        <div class="row">
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="/index.html">Главная</a>
+            </div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="/index.html">Компании</a>
+            </div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="#container-address">Контакты</a>
+            </div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center"></div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center"></div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="/index.html">Задать вопрос</a>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/balenciaga2.png" alt="ssence" class="orderImage"/>
+    <div class="container-order">
+        <h1 class="text-center mt-5 mb-5">Форма заказа</h1>
+        <div class="row">
+            <div class="col-md-6 orderInfo">
+                <h5 class="text-center pb-5">Информация о заказе</h5>
+                <div class="row mt-1">
+                    <div class="col-md-4">Имя:</div>
+                    <div class="col-md-4"><input class="form-control" id="first_name" type="text" onblur="checkFirst();" required /></div>
+                    <div class="col-md-4"><span id="first_name_check"></span></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-4">Фамилия:</div>
+                    <div class="col-md-4"><input class="form-control" id="last_name" type="text" onblur="checkLast();" required /></div>
+                    <div class="col-md-4"><span id="last_name_check"></span></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-4">Номер телефона:</div>
+                    <div class="col-md-4"><input class="form-control" id="phone" type="text" onblur="checkPhone();" placeholder="xxx-xxx-xxx" required /></div>
+                    <div class="col-md-4"><span id="phone_Check"></span></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-4">Адрес:</div>
+                    <div class="col-md-4"><input class="form-control" id="dest" type="text" onblur="checkDest();" required /></div>
+                    <div class="col-md-4"><span id="dest_Check"></span></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-4">Количество:</div>
+                    <div class="col-md-4"><input class="form-control" id="quantity" type="number" min="1" max="5" required /></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-4">Метод оплаты:</div>
+                    <div class="col-md-4">                                    
+                        <select class="form-control" name="paymethod" id="paymethod" required>
+                            <option>Наличные</option>
+                            <option>Картой</option>
+                            <option>PayPal</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-12 order text-center mt-5"><span id="sendOrder" onclick="outputData();">Send Order</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 orderSummary">                        
+                <div class="col-sm-12 col-md-12">
+                    <h5 class="text-center">Описание заказа</h5>
+                    <span id="summary"></span>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+<footer class="container-address" id="container-address">
+    <div class="row">
+        <div class="col-sm-4 col-md-3 footer">
+            <p class="def">@ Все на этом сайте защищено</p>
+        </div>
+        <div class="col-sm-2 col-md-4"></div>
+        <div class="col-sm-4 col-md-5">
+            <h2>Контакты</h2>
+            <p>125196, Россия, Москва</p>
+            <p>ул. 1-я Тверская-Ямская, д.21</p>
+            <p><strong>Тел.:</strong> +7 968 332-09-67</p>
+            <p><strong>Часы работы:</strong> 11:00-19:00</p>
+        </div>
+    </div>     
+</footer>
+</html>

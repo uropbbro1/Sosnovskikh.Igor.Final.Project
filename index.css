@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    background-color: black !important;
+}
+
+p{
+    color: white;
+}
+
+.price{
+    font-size: 20px;
+}
+
+.container-navigation a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    transition: ease-in-out 0.5s;
+}
+
+.container-navigation a:hover{
+    color: yellow;
+    font-size: 24px;
+}
+
+.container-main{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+.container-main p{
+    width: 40%;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+}
+
+.container-main img{
+    width: 50%;
+}
+
+.container-cards{
+    margin-top: 100px;
+    transition: transform ease 1s;
+}
+
+.card{
+    background-color: black !important;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    border-radius: 15px;
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+
+.categories-flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.categories-flex a:first-child{
+    margin-left: 15%;
+    color: white;
+    text-decoration: none;
+}
+
+.categories-flex a{
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.categories-flex a:hover{
+    color: yellow;
+}
+
+.categories-flex span{
+    width: 13%;
+}
+
+.container-question-form{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    margin: 0 auto 0 auto;
+    flex-direction: column;
+    background: linear-gradient(#2B2B2B, #73737397);
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+form input{
+    width: 50%;
+    margin: 20px auto 0 auto;
+}
+
+form::placeholder{
+    text-align: center;
+}
+
+form textarea{
+    width: 50%;
+    margin: 20px auto 0 auto;
+}
+
+form button{
+    width: 50%;
+    margin: 20px auto 0 auto;
+}
+
+footer{
+    margin-top: 100px;
+    color: white;
+}
+
+.container-address{
+    background-color: #212121;
+    text-align: center;
+}
+
+.container-address .def{
+    margin: auto 0 auto 0;
+}
+
+.container-order{
+    color: white;
+}
+
+#sendOrder {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(248, 146, 38);
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.orderInfo{
+    color: white;
+}
+
+.orderInfo .order:hover{
+    color: rgb(8, 0, 255);
+    cursor: pointer;
+}
+
+.orderSummary {
+    color: white;
+}
+
+.orderImage{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 38%;
+    top: 25px;
+    border-radius: 15px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adgallery</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="container-navigation">
+        <div class="row">
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="/index.html">Главная</a>
+            </div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="#container-cards">Компании</a></button>
+            </div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="#container-address">Контакты</a>
+            </div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center"></div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center"></div>
+            <div class="col-sm-6 col-md-2 mt-5 text-center">
+                <a href="#container-question-form">Задать вопрос</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-main">
+        <img src="./assets/logoDark.png" alt="logo"/>
+        <p>A curated collection of display ads from Facebook, 
+            Google, Twitter, LinkedIn, Quora, Reddit, and more.</p>
+    </div>
+    <!-- При нажатии на картинки открывается страница с оформлением заказа -->
+    <div class="container-cards" id="container-cards">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mt-5 text-center">
+                <div class="card">
+                    <a href="/order1.html"><img src="./assets/2_ssense.png" alt="ssence"/></a>
+                    <div class="categories-flex">
+                        <a href="#1">fashion</a>
+                        <a href="#1">retail</a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="price">2000P</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mt-5 text-center">
+                <div class="card">
+                    <a href="/order2.html"><img src="./assets/2_nike1.png" alt="ssence"/></a>
+                    <div class="categories-flex">
+                        <a href="#2">sports</a>
+                        <a href="#2">apparel</a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="price">6000P</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mt-5 text-center">
+                <div class="card">
+                    <a href="/order3.html"><img src="./assets/2_nike2.png" alt="ssence"/></a>
+                    <div class="categories-flex">
+                        <a href="#3">sports</a>
+                        <a href="#3">apparel</a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="price">7000P</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mt-5 text-center">
+                <div class="card">
+                    <a href="/order4.html"><img src="./assets/balenciaga.png" alt="ssence"/></a>
+                    <div class="categories-flex">
+                        <a href="#4">fashion</a>
+                        <a href="#4">retail</a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="price">8000P</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mt-5 text-center">
+                <div class="card">
+                    <a href="/order5.html"><img src="./assets/balenciaga2.png" alt="ssence"/></a>
+                    <div class="categories-flex">
+                        <a href="#5">fashion</a>
+                        <a href="#5">retail</a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="price">12000P</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mt-5 text-center">
+                <div class="card">
+                    <a href="/order6.html"><img src="./assets/balenciaga3.png" alt="ssence"/></a>
+                    <div class="categories-flex">
+                        <a href="#6">fashion</a>
+                        <a href="#6">retail</a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="price">20000P</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-question-form" id="container-question-form">
+        <h1>Задать вопрос</h1>
+        <form>
+            <input type="text" placeholder="Ваше имя" minlength="2" maxlength="25" required>
+            <input type="email" placeholder="Ваш E-mail" required>
+            <textarea placeholder="Напишите ваш вопрос" required></textarea>
+            <button class="btn btn-success">Отправить</button>
+        </form>
+    </div>
+</body>
+<footer class="container-address" id="container-address">
+    <div class="row">
+        <div class="col-sm-4 col-md-3 footer">
+            <p class="def">@ Все на этом сайте защищено</p>
+        </div>
+        <div class="col-sm-2 col-md-4"></div>
+        <div class="col-sm-4 col-md-5">
+            <h2>Контакты</h2>
+            <p>125196, Россия, Москва</p>
+            <p>ул. 1-я Тверская-Ямская, д.21</p>
+            <p><strong>Тел.:</strong> +7 968 332-09-67</p>
+            <p><strong>Часы работы:</strong> 11:00-19:00</p>
+        </div>
+    </div>     
+</footer>
+</html>
