@@ -89,7 +89,7 @@ function outputData() {
         document.getElementById("summary").innerHTML += "Количество: " + quantity + ".</br>";
         document.getElementById("summary").innerHTML += "Метод оплаты: " + paymethod + ".</p>";
         document.getElementById("summary").innerHTML += "<p style='font-weight: bold;'>Мы рады что вы пользуетесь нашими услугами :)</p>";
-        document.getElementById("summary").innerHTML += "<a href='/index.html'>На главную</a>"
+        document.getElementById("summary").innerHTML += "<a href='https://uropbbro1.github.io/index.html'>На главную</a>"
     }
     else {
         document.getElementById("summary").style.color="red";
